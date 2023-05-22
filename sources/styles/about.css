@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+body {
+  font-family: Michroma, serif;
+  background: linear-gradient(90deg, #041b77 0%, #02082c 83%, #000000 100%);
+}
+
+p {
+  color: aquamarine;
+}
+nav-link {
+  color: rgb(0, 0, 0);
+}
+.navbar-nav .nav-link {
+  color: aquamarine;
+}
+.navbar-nav .nav-link.active {
+  /* неактивный пэйдж цвет*/
+  color: rgb(144, 144, 145);
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-toggler {
+  background-color: rgb(255, 255, 255);
+}
+header .container-fluid {
+  background-color: black;
+}
+
+.main {
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  color: aquamarine;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+}
+.all{
+  width: 450px;
+
+}
+.all>img{
+  width: 100%;
+}
+
+.card {
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  color: aquamarine;
+}
+
+.card a {
+  text-decoration: none; /*убрать нижнее подчеркивание*/
+  color: aquamarine;
+}
+.slide-text,
+.footer-text {
+  color: aquamarine;
+  margin: auto auto; /*оцентровать текст рядос с картины по вертикали и горизонтали*/
+}
+
+footer,
+.btn-primary {
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*выравнение по верикали по центру*/
+}
+
+.call-anim {
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 230px;
+}
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@media (max-width: 1200px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .grid{
+  display: grid;
+  margin: 0%;
+  padding: 0%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+}
+}
+.nav-link {
+  padding-top: 0%;
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .grid{
+  display: grid;
+  margin: 0%;
+  padding: 0%;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+}
+}
+.nav-link {
+  padding-top: 0%;
+}

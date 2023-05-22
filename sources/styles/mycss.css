@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+body {
+  font-family: Michroma, serif;
+  background: linear-gradient(90deg, #041b77 0%, #02082c 83%, #000000 100%);
+}
+
+p {
+  color: aquamarine;
+}
+nav-link {
+  color: rgb(0, 0, 0);
+}
+.navbar-nav .nav-link {
+  color: aquamarine;
+}
+.navbar-nav .nav-link.active {
+  /* неактивный пэйдж цвет*/
+  color: rgb(144, 144, 145);
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-toggler {
+  background-color: rgb(255, 255, 255);
+}
+header .container-fluid {
+  background-color: black;
+}
+
+.sidebar {
+  color: aquamarine;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+}
+
+.card {
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  color: aquamarine;
+}
+
+.card a {
+  text-decoration: none; /*убрать нижнее подчеркивание*/
+  color: aquamarine;
+}
+.slide-text,
+.footer-text {
+  color: aquamarine;
+  margin: auto auto; /*оцентровать текст рядос с картины по вертикали и горизонтали*/
+}
+
+footer,
+.btn-primary {
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*выравнение по верикали по центру*/
+}
+
+.call-anim {
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
+.nav-link {
+  padding-top: 0%;
+}
+
+.sas {
+  padding-left: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.sasa {
+  color: black;
+  text-decoration: none;
+}
+.sasa:hover {
+  border-bottom: 3px solid black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  text-align: left;
+  background: #f2f2f2;
+  /*    padding-right: 150px;
+    padding-left: 80px; */
+  border-radius: 15px;
+  /*border: solid 1.5px black;*/
+
+  margin: 15px auto;
+  position: center;
+}
+label {
+  padding-bottom: 15px;
+  flex-direction: column;
+  font-size: 14px;
+  width: 80%;
+}
+input {
+  padding: 2px;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+  width: 80%;
+  outline: none;
+}
+.wrapper > input {
+  padding: 15px 0 15px 0;
+}
+.sex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 35px;
+  align-items: center;
+}
+.sex label {
+  align-items: center;
+  width: auto;
+  font-size: 15px;
+}
+#male,
+#female {
+  align-items: center;
+}
+.ratio {
+  display: flex;
+  flex-direction: row;
+}
+select {
+  border: 0;
+  width: 80%;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.reg {
+  color: black;
+  padding: 15px;
+  text-align: center;
+}
+
+.btn.button {
+  margin: 20px 0;
+  width: 30%;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}
+.btn.button:hover {
+  color: #d5d5d5;
+}
+.radio {
+  margin-left: 25px;
+  width: 15%;
+}
+
+.button {
+  color: white;
+  background-color: black;
+}
+.bag {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: white;
+}
+.meth {
+  height: 70px;
+}
+#cartDiv {
+  margin: auto;
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cartCard {
+  width: 400px;
+}
+.cartBtn {
+  color: aquamarine;
+}
+.swiper {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  height: 606px;
+  width: 120px;
+  display: block;
+}
+.content {
+  display: flex;
+
+  width: 40%;
+}
+#quiz {
+  padding-top: 200px;
+  width: 100vw;
+  margin: 0 auto;
+}
+.question {
+  text-align: left;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 10px;
+  color: white;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  color: white;
+  margin: 0 auto;
+}
+.answers > label {
+  margin: 0 auto;
+}
+.answers label > input {
+  width: 10%;
+  margin: 0;
+  padding: 0;
+}
+#submit {
+  font-size: 20px;
+  background-color: #297;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#submit:hover {
+  background-color: #3a8;
+}
+#results {
+  display: flex;
+  font-size: 20px;
+  width: 20%;
+  margin-left: 680px;
+  padding-top: 15px;
+  text-align: center;
+  flex-direction: row;
+  color: white;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: auto;
+}
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup-header {
+  background: linear-gradient(90deg, #041b77 0%, #02082c 83%, #000000 100%);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  padding: 2px 16px;
+}
+.popup-body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(270deg, #041b77 0%, #02082c 83%, #000000 100%);
+  padding: 2px 16px;
+}
+.popup-footer {
+  display: flex;
+  justify-content: center;
+  padding: 12px 64px;
+  background: linear-gradient(90deg, #041b77 0%, #02082c 83%, #000000 100%);
+  color: aliceblue;
+}
+.popup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.mapping {
+  width: 70%;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
